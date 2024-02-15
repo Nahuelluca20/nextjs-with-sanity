@@ -1,5 +1,3 @@
-// ./sanity/lib/token.ts
-
 import "server-only";
 
 import { experimental_taintUniqueValue } from "react";
