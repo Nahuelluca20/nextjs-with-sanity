@@ -5,7 +5,6 @@ import { SanityDocument } from "next-sanity";
 
 import { dataset, projectId } from "@/sanity/env";
 import { SanityImageAssetDocument } from "@sanity/client/stega";
-import { ReactChildren, ReactNode } from "react";
 
 const builder = imageUrlBuilder({ projectId, dataset });
 
