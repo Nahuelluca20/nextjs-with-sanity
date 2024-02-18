@@ -38,7 +38,7 @@ export default function Post({ post }: { post: SanityDocument }) {
 
   return (
     <main className="container mx-auto prose prose-lg px-4 py-20">
-      <div className="flex flex-row-reverse mb-20">
+      <div className="md:flex md:flex-row-reverse mb-20">
         {title ? <h1>{title}</h1> : null}
         {mainImage ? (
           <Image
@@ -55,7 +55,7 @@ export default function Post({ post }: { post: SanityDocument }) {
           />
         ) : null}
       </div>
-
+      {/* @ts-ignore */}
       {body ? <PortableText value={body} components={components} /> : null}
     </main>
   );

@@ -7,7 +7,7 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
       {posts?.length > 0 ? (
         posts.map((post) => (
           <Link key={post._id} href={`/posts/${post.slug.current}`}>
-            <h2 className="p-4 hover:bg-blue-50">{post.title}</h2>
+            <h2 className="py-4 px-2 hover:bg-blue-50">{post.title}</h2>
           </Link>
         ))
       ) : (
